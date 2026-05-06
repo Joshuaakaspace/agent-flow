@@ -1,0 +1,15 @@
+# agent-flow-scheduler requirements
+# Core: no external dependencies — pure Python stdlib
+# stdlib used: threading, heapq, uuid, dataclasses, hashlib, statistics, time, abc
+
+# Optional: real LLM backends
+openai>=1.0.0          ; extra == "openai"
+anthropic>=0.25.0      ; extra == "anthropic"
+
+# Optional: testing
+pytest>=7.0.0          ; extra == "dev"
+pytest-timeout>=2.0.0  ; extra == "dev"
+
+# Optional: visualization (for generate_diagram.py)
+matplotlib>=3.7.0      ; extra == "viz"
+networkx>=3.0          ; extra == "viz"
